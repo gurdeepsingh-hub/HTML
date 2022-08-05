@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+}
+.container {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid: repeat(5, 100fr) / repeat(2, 100fr);
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* justify-items: center; */
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    grid: repeat(9, 10rem) / 100fr;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    grid: repeat(4, 100fr) / repeat(3, 100fr);
+    grid-template-areas: ". third third" ". third third";
+  }
+  .box:nth-of-type(3) {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    object-fit: cover;
+  }
+}
