@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  border: 1px solid black;
+  background: black;
+  justify-content: flex-end;
+}
+.box {
+  padding: 1rem;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
