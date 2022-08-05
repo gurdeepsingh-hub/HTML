@@ -1,0 +1,26 @@
+.container{
+    box-sizing: border-box;
+    border: 3px solid lightgrey;
+    height: 90vh;
+    display: flex;
+    margin: 10px;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+}
+.box{
+    flex-basis: 20rem;
+    /* width: 5rem; */
+    flex-grow: 1;
+    flex-shrink: 1;
+    height: 5rem;
+    background: gold;
+    margin: 1rem;
+}
+.box-one{
+    /* align-self: flex-end; */
+
+}
